@@ -88,7 +88,7 @@ const Footer = () => {
                 Terms & Conditions
               </Link>
               <p className="text-[1.4rem] text-muted-foreground">
-                © Editorial 2025
+                © loominah 2025
               </p>
             </nav>
 

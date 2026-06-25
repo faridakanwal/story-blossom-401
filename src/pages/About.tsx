@@ -24,7 +24,7 @@ const About = () => {
           <picture className="flex w-full justify-center">
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=2000&q=80"
-              alt="Editorial Team"
+              alt="loominah Team"
               className="top-0 left-0 max-w-full w-full aspect-[2/1] xl:aspect-[16/5] object-cover"
             />
           </picture>
@@ -40,7 +40,7 @@ const About = () => {
         </AppearOnScroll>
         <AppearOnScroll delay={150}>
           <p className="text-[1.8rem] leading-[1.8] text-foreground mb-6">
-            Editorial began with a simple question: What if we could create a space where thoughtful ideas, meaningful stories, and beautiful design come together to enrich our daily lives?
+            loominah began with a simple question: What if we could create a space where thoughtful ideas, meaningful stories, and beautiful design come together to enrich our daily lives?
           </p>
         </AppearOnScroll>
         <AppearOnScroll delay={300}>
