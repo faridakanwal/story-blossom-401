@@ -29,7 +29,7 @@ const Header = () => {
       <div className="h-full px-6 md:px-[calc(18vw-10rem)]">
         <div className="flex items-center justify-between h-full max-w-[138rem] mx-auto">
           <Link to="/" className="font-sans text-[21px] font-bold text-foreground">
-            Editorial
+            loominah
           </Link>
 
           {/* Menu Button */}
@@ -118,7 +118,7 @@ const Header = () => {
               <ul>
                 <li>
                   <a
-                    href="mailto:hello@editorial.com"
+                    href="mailto:hello@loominah.com"
                     className="text-[1.6rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] animate-in fade-in slide-in-from-right-4 bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
                     style={{
                       animationDelay: "600ms",

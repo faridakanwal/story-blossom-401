@@ -19,7 +19,7 @@ const Privacy = () => {
 
         <ArticleContent>
           <p>
-            At Editorial, we take your privacy seriously. This Privacy Policy
+            At loominah, we take your privacy seriously. This Privacy Policy
             explains how we collect, use, disclose, and safeguard your
             information when you visit our website.
           </p>
@@ -151,7 +151,7 @@ const Privacy = () => {
             us:
           </p>
           <ul>
-            <li>By email: privacy@editorial.com</li>
+            <li>By email: privacy@loominah.com</li>
             <li>Through our contact page: <a href="/contact">/contact</a></li>
           </ul>
         </ArticleContent>

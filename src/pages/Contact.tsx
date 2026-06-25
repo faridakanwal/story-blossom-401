@@ -68,8 +68,8 @@ const Contact = () => {
               <AppearOnScroll delay={300}>
                 <div className="space-y-3 mb-8">
                   <p className="text-[1.8rem]">
-                    <a href="mailto:hello@editorial.com" className="hover:opacity-60 transition-opacity">
-                      hello@editorial.com
+                    <a href="mailto:hello@loominah.com" className="hover:opacity-60 transition-opacity">
+                      hello@loominah.com
                     </a>
                   </p>
                   <p className="text-[1.8rem]">
