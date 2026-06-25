@@ -11,22 +11,22 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "What is Editorial?",
+      question: "What is loominah?",
       answer:
-        "Editorial is a design-forward content platform where creators share stories, photography, and perspectives. We combine editorial excellence with beautiful design to create an engaging reading experience.",
+        "loominah is a design-forward content platform where creators share stories, photography, and perspectives. We combine editorial excellence with beautiful design to create an engaging reading experience.",
     },
     {
-      question: "How can I contribute to Editorial?",
+      question: "How can I contribute to loominah?",
       answer:
         "We're always looking for talented writers, photographers, and designers. Reach out through our Contact page with samples of your work and a brief introduction. We review all submissions and respond within 7-10 business days.",
     },
     {
-      question: "Is Editorial free to read?",
+      question: "Is loominah free to read?",
       answer:
-        "Yes! All content on Editorial is free to read. We believe great stories should be accessible to everyone. We're exploring sustainable models that keep content free while supporting our creators.",
+        "Yes! All content on loominah is free to read. We believe great stories should be accessible to everyone. We're exploring sustainable models that keep content free while supporting our creators.",
     },
     {
-      question: "Can I republish content from Editorial?",
+      question: "Can I republish content from loominah?",
       answer:
         "Content rights belong to individual creators. If you'd like to republish or reference an article, please reach out to us with details about your intended use, and we'll connect you with the original author.",
     },
@@ -83,7 +83,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-[1.8rem] md:text-[2rem] text-muted-foreground leading-[1.8]">
-            Everything you need to know about Editorial and how it works.
+            Everything you need to know about loominah and how it works.
           </p>
         </div>
       </Section>

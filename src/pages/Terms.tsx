@@ -19,7 +19,7 @@ const Terms = () => {
 
         <ArticleContent>
           <p>
-            Welcome to Editorial. By accessing or using our website, you agree
+            Welcome to loominah. By accessing or using our website, you agree
             to be bound by these Terms and Conditions. Please read them
             carefully.
           </p>
@@ -34,7 +34,7 @@ const Terms = () => {
           <h2>Use License</h2>
           <p>
             Permission is granted to temporarily download one copy of the
-            materials (information or software) on Editorial's website for
+            materials (information or software) on loominah's website for
             personal, non-commercial transitory viewing only. This is the grant
             of a license, not a transfer of title, and under this license you
             may not:
@@ -47,7 +47,7 @@ const Terms = () => {
             </li>
             <li>
               Attempt to decompile or reverse engineer any software contained on
-              Editorial's website
+              loominah's website
             </li>
             <li>
               Remove any copyright or other proprietary notations from the
@@ -61,15 +61,15 @@ const Terms = () => {
 
           <h2>Content Ownership and Copyright</h2>
           <p>
-            All content published on Editorial, including text, images, videos,
-            and graphics, is protected by copyright and owned by Editorial or
+            All content published on loominah, including text, images, videos,
+            and graphics, is protected by copyright and owned by loominah or
             the original content creators. The compilation of all content on
-            this site is the exclusive property of Editorial.
+            this site is the exclusive property of loominah.
           </p>
 
           <h3>User-Generated Content</h3>
           <p>
-            If you submit content to Editorial, you grant us a non-exclusive,
+            If you submit content to loominah, you grant us a non-exclusive,
             worldwide, royalty-free license to use, reproduce, modify, and
             display your content on our platform. You represent and warrant that
             you own or have the necessary rights to the content you submit.
@@ -77,8 +77,8 @@ const Terms = () => {
 
           <h2>Disclaimer</h2>
           <p>
-            The materials on Editorial's website are provided on an 'as is'
-            basis. Editorial makes no warranties, expressed or implied, and
+            The materials on loominah's website are provided on an 'as is'
+            basis. loominah makes no warranties, expressed or implied, and
             hereby disclaims and negates all other warranties including, without
             limitation, implied warranties or conditions of merchantability,
             fitness for a particular purpose, or non-infringement of
@@ -87,26 +87,26 @@ const Terms = () => {
 
           <h2>Limitations</h2>
           <p>
-            In no event shall Editorial or its suppliers be liable for any
+            In no event shall loominah or its suppliers be liable for any
             damages (including, without limitation, damages for loss of data or
             profit, or due to business interruption) arising out of the use or
-            inability to use the materials on Editorial's website.
+            inability to use the materials on loominah's website.
           </p>
 
           <h2>Accuracy of Materials</h2>
           <p>
-            The materials appearing on Editorial's website could include
-            technical, typographical, or photographic errors. Editorial does not
+            The materials appearing on loominah's website could include
+            technical, typographical, or photographic errors. loominah does not
             warrant that any of the materials on its website are accurate,
-            complete, or current. Editorial may make changes to the materials
+            complete, or current. loominah may make changes to the materials
             contained on its website at any time without notice.
           </p>
 
           <h2>Links to Third-Party Sites</h2>
           <p>
-            Editorial has not reviewed all of the sites linked to its website
+            loominah has not reviewed all of the sites linked to its website
             and is not responsible for the contents of any such linked site. The
-            inclusion of any link does not imply endorsement by Editorial of the
+            inclusion of any link does not imply endorsement by loominah of the
             site. Use of any such linked website is at the user's own risk.
           </p>
 
@@ -143,9 +143,9 @@ const Terms = () => {
 
           <h2>Modifications to Service</h2>
           <p>
-            Editorial reserves the right to modify or discontinue, temporarily
+            loominah reserves the right to modify or discontinue, temporarily
             or permanently, the service (or any part thereof) with or without
-            notice. Editorial shall not be liable to you or to any third party
+            notice. loominah shall not be liable to you or to any third party
             for any modification, suspension, or discontinuance of the service.
           </p>
 
@@ -158,7 +158,7 @@ const Terms = () => {
 
           <h2>Changes to Terms</h2>
           <p>
-            Editorial reserves the right to revise these Terms and Conditions at
+            loominah reserves the right to revise these Terms and Conditions at
             any time. By using this website, you are agreeing to be bound by the
             then current version of these Terms and Conditions.
           </p>
@@ -177,7 +177,7 @@ const Terms = () => {
             contact us:
           </p>
           <ul>
-            <li>By email: legal@editorial.com</li>
+            <li>By email: legal@loominah.com</li>
             <li>Through our contact page: <a href="/contact">/contact</a></li>
           </ul>
         </ArticleContent>
