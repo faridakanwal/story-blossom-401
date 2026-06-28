@@ -13,7 +13,7 @@ const About = () => {
       <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mt-[4.5rem] xl:mt-[6rem]">
         <AppearOnScroll delay={0}>
           <h1 className="text-[3.4rem] md:text-[4.2rem] lg:text-[6rem] font-semibold tracking-[-0.01em] leading-[1.2] md:leading-[1] text-center">
-            About Us
+            About
           </h1>
         </AppearOnScroll>
       </div>

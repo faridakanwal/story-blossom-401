@@ -11,10 +11,6 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
-import LoominahBook from "./pages/LoominahBook";
-import CustomProjects from "./pages/CustomProjects";
-import Sustainability from "./pages/Sustainability";
-import Journal from "./pages/Journal";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,10 +27,6 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/article/:slug" element={<Article />} />
             <Route path="/about" element={<About />} />
-            <Route path="/loominah-book" element={<LoominahBook />} />
-            <Route path="/custom-projects" element={<CustomProjects />} />
-            <Route path="/sustainability" element={<Sustainability />} />
-            <Route path="/journal" element={<Journal />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy" element={<Privacy />} />
