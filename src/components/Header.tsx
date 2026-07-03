@@ -124,30 +124,6 @@ const Header = () => {
                     Sustainability
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/contact"
-                    className="text-[1.6rem] inline-block font-semibold [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] animate-in fade-in slide-in-from-right-4 bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
-                    style={{
-                      animationDelay: "500ms",
-                      animationFillMode: "backwards",
-                    }}
-                  >
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/contact"
-                    className="text-[1.6rem] inline-block font-semibold [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] animate-in fade-in slide-in-from-right-4 bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
-                    style={{
-                      animationDelay: "500ms",
-                      animationFillMode: "backwards",
-                    }}
-                  >
-                    Contact
-                  </Link>
-                </li>
               </ul>
 
               {/* Secondary Links - Journal, FAQ, Contact */}
