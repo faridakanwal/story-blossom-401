@@ -135,7 +135,7 @@ const Contact = () => {
                         value={formData.firstName}
                         onChange={handleChange}
                         required
-                        className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground"
+                        className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[hsl(var(--primary))] focus:ring-2 focus:ring-[hsl(var(--primary) / 0.2)] transition-all placeholder:text-muted-foreground"
                         placeholder="First Name"
                       />
                     </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                         type="text"
                         value={formData.lastName}
                         onChange={handleChange}
-                        className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground"
+                        className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[hsl(var(--primary))] focus:ring-2 focus:ring-[hsl(var(--primary) / 0.2)] transition-all placeholder:text-muted-foreground"
                         placeholder="Last Name"
                       />
                     </div>
@@ -166,7 +166,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground"
+                      className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[hsl(var(--primary))] focus:ring-2 focus:ring-[hsl(var(--primary) / 0.2)] transition-all placeholder:text-muted-foreground"
                       placeholder="Email"
                     />
                   </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={8}
-                      className="w-full text-[1.8rem] leading-[2.4rem] p-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground resize-y"
+                      className="w-full text-[1.8rem] leading-[2.4rem] p-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[hsl(var(--primary))] focus:ring-2 focus:ring-[hsl(var(--primary) / 0.2)] transition-all placeholder:text-muted-foreground resize-y"
                       placeholder="Message"
                     />
                   </div>
@@ -194,7 +194,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="text-[1.8rem] font-medium h-[60px] px-12 bg-[rgba(203,48,223,0.9)] text-white rounded-lg hover:bg-[rgba(203,48,223,1)] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="text-[1.8rem] font-medium h-[60px] px-12 bg-[hsl(var(--primary) / 0.9)] text-white rounded-lg hover:bg-[hsl(var(--primary))] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Sending..." : "Send"}
                   </button>

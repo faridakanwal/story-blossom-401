@@ -1,126 +1,119 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Section from "@/components/Section";
-import AppearOnScroll from "@/components/AppearOnScroll";
-import { Sparkles, Palette, Heart, Users } from "lucide-react";
+import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
+import redPatchwork from "@/assets/loominah/products/red-patchwork-cushion.jpg";
+import runnerNapkin from "@/assets/loominah/products/floral-runner-napkin.jpg";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Title */}
-      <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mt-[4.5rem] xl:mt-[6rem]">
-        <AppearOnScroll delay={0}>
-          <h1 className="text-[3.4rem] md:text-[4.2rem] lg:text-[6rem] font-semibold tracking-[-0.01em] leading-[1.2] md:leading-[1] text-center">
-            About
+      {/* Hero */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-16 md:pt-24">
+        <div className="max-w-[110rem] mx-auto text-center">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.2rem] text-primary mb-8">Our Story</p>
+          <h1 className="font-serif text-[4.4rem] md:text-[7.2rem] leading-[1.02] tracking-[-0.02em]">
+            Cloth carries memory.
           </h1>
-        </AppearOnScroll>
-      </div>
-
-      {/* Hero Image */}
-      <AppearOnScroll delay={0}>
-        <figure className="relative flex overflow-hidden w-full mt-[3rem] md:mt-[4.5rem] lg:mt-[6rem] mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
-          <picture className="flex w-full justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=2000&q=80"
-              alt="loominah Team"
-              className="top-0 left-0 max-w-full w-full aspect-[2/1] xl:aspect-[16/5] object-cover"
-            />
-          </picture>
-        </figure>
-      </AppearOnScroll>
-
-      {/* Story Section */}
-      <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
-        <AppearOnScroll delay={0}>
-          <h2 className="text-[2.7rem] md:text-[3.6rem] font-semibold mb-[3rem]">
-            Our Story
-          </h2>
-        </AppearOnScroll>
-        <AppearOnScroll delay={150}>
-          <p className="text-[1.8rem] leading-[1.8] text-foreground mb-6">
-            loominah began with a simple question: What if we could create a space where thoughtful ideas, meaningful stories, and beautiful design come together to enrich our daily lives?
+          <p className="mt-8 text-[1.7rem] leading-[1.75] text-muted-foreground max-w-[62rem] mx-auto">
+            Loominah began as a quiet act of rescue — gathering the beautiful cuts of fabric that
+            were being set aside by ateliers and couturiers, and imagining them into pieces made
+            for daily life.
           </p>
-        </AppearOnScroll>
-        <AppearOnScroll delay={300}>
-          <p className="text-[1.8rem] leading-[1.8] text-foreground mb-6">
-            In a world saturated with content, we felt the need for something different—a publication that prioritizes depth over speed, quality over quantity, and authentic connection over viral moments.
-          </p>
-        </AppearOnScroll>
-        <AppearOnScroll delay={450}>
-          <p className="text-[1.8rem] leading-[1.8] text-foreground">
-            What started as a small collective of designers and writers has grown into a platform celebrating diverse voices and perspectives. We believe how we present stories is just as important as the stories themselves.
-          </p>
-        </AppearOnScroll>
-      </div>
+        </div>
+      </section>
 
-      {/* Mission Quote */}
-      <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
-        <AppearOnScroll delay={0}>
-          <figure className="blockquote-big text-center mt-[1.25rem] mb-[0.9375rem] md:mt-[1.875rem] md:mb-[1.875rem] lg:mt-[3.75rem] lg:mb-[3.75rem] md:mx-[calc(-18vw+6.875rem)] xl:mx-[-12.5rem]">
-            <blockquote className="font-sans text-[calc(5vw+0.6rem)] lg:text-[5.4rem] font-extrabold leading-[1.2]">
-              "To elevate digital storytelling through thoughtful design and authentic voices."
-            </blockquote>
-            <figcaption className="text-[calc(2.5vw+0.8rem)] lg:text-[3rem] font-semibold leading-[1.6] md:leading-[1.4] before:content-['―_']">
-              Our Mission
-            </figcaption>
+      {/* Editorial image split */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-20 md:pt-28">
+        <div className="max-w-[138rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+          <figure className="lg:col-span-7 relative aspect-[4/5] overflow-hidden">
+            <img src={brocadeCushion} alt="A brocade cushion in low afternoon light" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           </figure>
-        </AppearOnScroll>
-      </div>
-
-      {/* Values Grid */}
-      <Section>
-        <div className="max-w-[110rem] mx-auto">
-          <AppearOnScroll delay={0}>
-            <h2 className="text-[2.7rem] md:text-[3.6rem] font-semibold mb-[4rem]">
-              Our Values
+          <div className="lg:col-span-5 space-y-8">
+            <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em]">
+              From surplus to something loved.
             </h2>
-          </AppearOnScroll>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <AppearOnScroll delay={0}>
-              <div className="lg:col-span-1 p-8 rounded-2xl bg-[rgba(197,159,255,0.15)]">
-                <Sparkles className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Authenticity</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  We share real experiences, honest reflections, and genuine insights—not curated perfection.
-                </p>
-              </div>
-            </AppearOnScroll>
-
-            <AppearOnScroll delay={150}>
-              <div className="lg:col-span-2 p-8 rounded-2xl bg-[rgba(255,149,238,0.15)]">
-                <Palette className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Thoughtfulness</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  Every article is carefully researched, thoughtfully written, and designed to add real value.
-                </p>
-              </div>
-            </AppearOnScroll>
-
-            <AppearOnScroll delay={300}>
-              <div className="lg:col-span-2 p-8 rounded-2xl bg-[rgba(255,207,109,0.15)]">
-                <Heart className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Inclusivity</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  We welcome diverse perspectives and believe everyone's journey deserves respect and representation.
-                </p>
-              </div>
-            </AppearOnScroll>
-
-            <AppearOnScroll delay={450}>
-              <div className="lg:col-span-1 p-8 rounded-2xl bg-[rgba(254,185,131,0.15)]">
-                <Users className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Sustainability</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  We promote practices that are sustainable for individuals, communities, and the planet.
-                </p>
-              </div>
-            </AppearOnScroll>
+            <p className="text-[1.7rem] leading-[1.8] text-muted-foreground">
+              A metre of silk brocade, a length of hand-block cotton, a run of embroidered borders —
+              too small for a garment, too beautiful to discard. We began collecting these fragments
+              from luxury houses and small ateliers, giving each one a slower, more private life.
+            </p>
+            <p className="text-[1.7rem] leading-[1.8] text-muted-foreground">
+              Every cushion, runner and tote begins as a quiet study — laying panels beside each
+              other until the composition feels inevitable. The result is a piece with a memory:
+              carried forward by hands that value it enough to make it new.
+            </p>
           </div>
         </div>
-      </Section>
+      </section>
+
+      {/* Pull quote */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[100rem] mx-auto text-center">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-10">Our Belief</p>
+          <blockquote className="font-serif text-[3rem] md:text-[4.6rem] leading-[1.2] tracking-[-0.01em]">
+            "Luxury is not something new. It is something considered — kept, cared for,
+            and given the chance to live a second life."
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Values as editorial list */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="lg:col-span-4">
+            <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">The House</p>
+            <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em]">
+              What holds Loominah together.
+            </h2>
+          </div>
+          <ol className="lg:col-span-8 divide-y divide-border">
+            {[
+              { t: "Material first", d: "Every design begins with the fabric — its hand, drape and history — never with a sketch." },
+              { t: "Made in small runs", d: "Each design is produced in numbered editions so no two homes carry the same piece." },
+              { t: "Hand-finished", d: "Seams, hems and tassels are turned by hand in a studio that keeps close to its makers." },
+              { t: "Quietly circular", d: "The luxury waste stream is our raw material — sustainability is a consequence, not a slogan." },
+            ].map((v, i) => (
+              <li key={v.t} className="grid grid-cols-[5rem_1fr] gap-6 py-8">
+                <span className="font-serif text-[2rem] text-primary">{String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3 className="font-serif text-[2.4rem] mb-2">{v.t}</h3>
+                  <p className="text-[1.5rem] leading-[1.8] text-muted-foreground">{v.d}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Duo image */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <figure className="relative aspect-[4/5] overflow-hidden">
+            <img src={runnerNapkin} alt="A pink floral runner and napkin set on a dark wood table" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+          </figure>
+          <figure className="relative aspect-[4/5] overflow-hidden">
+            <img src={redPatchwork} alt="A crimson and orange patchwork cushion with tassels" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+          </figure>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48 pb-32">
+        <div className="max-w-[80rem] mx-auto text-center">
+          <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em] mb-8">
+            Meet the collection.
+          </h2>
+          <Link
+            to="/custom-projects"
+            className="inline-flex items-center px-10 py-4 bg-foreground text-background text-[1.3rem] uppercase tracking-[0.2em] hover:bg-primary transition-colors duration-500"
+          >
+            View Collections →
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </div>

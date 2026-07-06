@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import hero from "@/assets/loominah/hero.jpg";
-import cushions from "@/assets/loominah/cushions.jpg";
-import runners from "@/assets/loominah/runners.jpg";
-import totes from "@/assets/loominah/totes.jpg";
-import craft from "@/assets/loominah/craft.jpg";
-import textiles from "@/assets/loominah/textiles.jpg";
+import patchworkFloral from "@/assets/loominah/products/patchwork-floral-cushion.jpg";
+import runnerNapkin from "@/assets/loominah/products/floral-runner-napkin.jpg";
+import patchworkTassel from "@/assets/loominah/products/patchwork-tassel-cushion.jpg";
+import stripedTote from "@/assets/loominah/products/striped-tote.jpg";
+import stripedCushion from "@/assets/loominah/products/striped-cushion.jpg";
+import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
+import greenTote from "@/assets/loominah/products/green-tote.jpg";
+import redPatchwork from "@/assets/loominah/products/red-patchwork-cushion.jpg";
+import laptopSleeve from "@/assets/loominah/products/laptop-sleeve.jpg";
+import embroideredClutch from "@/assets/loominah/products/embroidered-clutch.png";
 
 const collections = [
-  { name: "Cushions", image: cushions, href: "/custom-projects", tag: "01 / Collection" },
-  { name: "Table Runners", image: runners, href: "/custom-projects", tag: "02 / Collection" },
-  { name: "Tote Bags", image: totes, href: "/custom-projects", tag: "03 / Collection" },
-  { name: "Placemats", image: textiles, href: "/custom-projects", tag: "04 / Collection" },
+  { name: "Cushions", image: patchworkFloral, href: "/custom-projects#cushions", tag: "01 / Collection" },
+  { name: "Table Linens", image: runnerNapkin, href: "/custom-projects#table", tag: "02 / Collection" },
+  { name: "Totes & Carryalls", image: stripedTote, href: "/custom-projects#totes", tag: "03 / Collection" },
+  { name: "Clutches & Sleeves", image: laptopSleeve, href: "/custom-projects#accessories", tag: "04 / Collection" },
 ];
 
 const process = [
@@ -63,8 +67,8 @@ const Blog = () => {
             <div className="lg:col-span-7 order-1 lg:order-2">
               <figure className="relative overflow-hidden aspect-[4/5] lg:aspect-[5/6]">
                 <img
-                  src={hero}
-                  alt="A quiet interior with linen cushions stacked on a travertine bench"
+                  src={brocadeCushion}
+                  alt="A gold and pink brocade cushion in soft daylight"
                   className="absolute inset-0 w-full h-full object-cover"
                   width={1600}
                   height={1280}
@@ -162,8 +166,8 @@ const Blog = () => {
           <div className="lg:col-span-5 lg:sticky lg:top-32">
             <figure className="relative overflow-hidden aspect-[4/5]">
               <img
-                src={craft}
-                alt="Hands weaving natural fibers"
+                src={patchworkTassel}
+                alt="A patchwork cushion with tassels resting against a plaster wall"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -208,9 +212,9 @@ const Blog = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
             {[
-              { img: textiles, tag: "Textiles", title: "The quiet luxury of leftover cloth" },
-              { img: runners, tag: "Interiors", title: "Setting a table for slow evenings" },
-              { img: craft, tag: "Craft", title: "Six pairs of hands, one runner" },
+              { img: embroideredClutch, tag: "Textiles", title: "The quiet luxury of leftover cloth" },
+              { img: runnerNapkin, tag: "Interiors", title: "Setting a table for slow evenings" },
+              { img: redPatchwork, tag: "Craft", title: "Six pairs of hands, one cushion" },
             ].map((j, i) => (
               <Link key={i} to="/loominah-book" className="group block">
                 <figure className="relative aspect-[4/5] overflow-hidden mb-6">
