@@ -1,121 +1,125 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Section from "@/components/Section";
-import AppearOnScroll from "@/components/AppearOnScroll";
-import { Leaf, Sun, Droplets, TreePine } from "lucide-react";
+import stripedCushion from "@/assets/loominah/products/striped-cushion.jpg";
+import patchworkTassel from "@/assets/loominah/products/patchwork-tassel-cushion.jpg";
+
+const steps = [
+  {
+    step: "01",
+    label: "Sourced",
+    body: "We collect surplus cuttings from ateliers, couturiers and luxury houses — the pieces too small for a garment and too beautiful to discard.",
+  },
+  {
+    step: "02",
+    label: "Selected",
+    body: "Each fragment is inspected for hand, weight and grain. Only pieces with a long life ahead of them enter the studio.",
+  },
+  {
+    step: "03",
+    label: "Composed",
+    body: "Panels are arranged on the table until the composition feels inevitable — a slow, almost silent stage of the work.",
+  },
+  {
+    step: "04",
+    label: "Crafted",
+    body: "Sewn in small batches by a tight-knit team, with hand-finishing on every hem, tassel and lining.",
+  },
+  {
+    step: "05",
+    label: "Numbered",
+    body: "Each piece is measured, pressed, labelled and numbered within its edition — often one of only six to twelve.",
+  },
+  {
+    step: "06",
+    label: "Sent",
+    body: "Wrapped in unbleached cotton and shipped with a card that traces the origins of its cloth.",
+  },
+];
 
 const Sustainability = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Title */}
-      <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mt-[4.5rem] xl:mt-[6rem]">
-        <AppearOnScroll delay={0}>
-          <h1 className="text-[3.4rem] md:text-[4.2rem] lg:text-[6rem] font-semibold tracking-[-0.01em] leading-[1.2] md:leading-[1] text-center">
-            Sustainability
+      {/* Hero */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-16 md:pt-24">
+        <div className="max-w-[110rem] mx-auto text-center">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.2rem] text-primary mb-8">Our Process</p>
+          <h1 className="font-serif text-[4.4rem] md:text-[7.2rem] leading-[1.02] tracking-[-0.02em]">
+            Six quiet steps, <br className="hidden md:block" />repeated with care.
           </h1>
-        </AppearOnScroll>
-      </div>
-
-      {/* Hero Image */}
-      <AppearOnScroll delay={0}>
-        <figure className="relative flex overflow-hidden w-full mt-[3rem] md:mt-[4.5rem] lg:mt-[6rem] mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
-          <picture className="flex w-full justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=2000&q=80"
-              alt="Sustainable nature landscape"
-              className="top-0 left-0 max-w-full w-full aspect-[2/1] xl:aspect-[16/5] object-cover"
-            />
-          </picture>
-        </figure>
-      </AppearOnScroll>
-
-      {/* Intro Section */}
-      <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
-        <AppearOnScroll delay={0}>
-          <h2 className="text-[2.7rem] md:text-[3.6rem] font-semibold mb-[3rem]">
-            Caring for how we create
-          </h2>
-        </AppearOnScroll>
-        <AppearOnScroll delay={150}>
-          <p className="text-[1.8rem] leading-[1.8] text-foreground mb-6">
-            Sustainability at loominah is not a marketing label. It is a practice that shapes how we produce, publish, and partner with others.
+          <p className="mt-8 text-[1.7rem] leading-[1.75] text-muted-foreground max-w-[62rem] mx-auto">
+            The Loominah studio is small on purpose. Every piece passes through the same six
+            hands-on stages — no shortcuts, no filler, no batches that lose their character.
           </p>
-        </AppearOnScroll>
-        <AppearOnScroll delay={300}>
-          <p className="text-[1.8rem] leading-[1.8] text-foreground">
-            We believe digital media has a physical footprint too. From the energy that powers our servers to the paper we print on, we look for the cleaner choice at every step.
-          </p>
-        </AppearOnScroll>
-      </div>
+        </div>
+      </section>
 
-      {/* Mission Quote */}
-      <div className="box-content max-w-[64rem] px-4 md:px-[calc(18vw-10rem)] mx-auto relative mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
-        <AppearOnScroll delay={0}>
-          <figure className="blockquote-big text-center mt-[1.25rem] mb-[0.9375rem] md:mt-[1.875rem] md:mb-[1.875rem] lg:mt-[3.75rem] lg:mb-[3.75rem] md:mx-[calc(-18vw+6.875rem)] xl:mx-[-12.5rem]">
-            <blockquote className="font-sans text-[calc(5vw+0.6rem)] lg:text-[5.4rem] font-extrabold leading-[1.2]">
-              "Better media, made with less."
-            </blockquote>
-            <figcaption className="text-[calc(2.5vw+0.8rem)] lg:text-[3rem] font-semibold leading-[1.6] md:leading-[1.4] before:content-['―_']">
-              Sustainability at loominah
+      {/* Split with image */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-24 md:pt-36">
+        <div className="max-w-[138rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <figure className="relative overflow-hidden aspect-[4/5]">
+              <img src={patchworkTassel} alt="A patchwork cushion detail" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+            </figure>
+            <figcaption className="mt-4 font-sans uppercase tracking-[0.25em] text-[1rem] text-muted-foreground">
+              Studio notes · Composition table
             </figcaption>
-          </figure>
-        </AppearOnScroll>
-      </div>
+          </div>
+          <ol className="lg:col-span-7 divide-y divide-border">
+            {steps.map((s) => (
+              <li key={s.step} className="grid grid-cols-[6rem_1fr] gap-6 py-10">
+                <span className="font-serif text-[2.4rem] text-primary">{s.step}</span>
+                <div>
+                  <h3 className="font-serif text-[2.8rem] mb-3 tracking-[-0.01em]">{s.label}</h3>
+                  <p className="text-[1.5rem] leading-[1.8] text-muted-foreground">{s.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
 
-      {/* Values Grid */}
-      <Section>
-        <div className="max-w-[110rem] mx-auto">
-          <AppearOnScroll delay={0}>
-            <h2 className="text-[2.7rem] md:text-[3.6rem] font-semibold mb-[4rem]">
-              Our commitments
-            </h2>
-          </AppearOnScroll>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <AppearOnScroll delay={0}>
-              <div className="lg:col-span-1 p-8 rounded-2xl bg-[rgba(197,159,255,0.15)]">
-                <Leaf className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Responsible sourcing</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  Print materials use recycled or FSC-certified paper, and we choose local printers whenever possible.
+      {/* Impact strip */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[120rem] mx-auto border-t border-b border-border py-16 md:py-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            {[
+              { n: "100%", l: "Reclaimed textile" },
+              { n: "≤ 12", l: "Pieces per edition" },
+              { n: "0", l: "Synthetic filler" },
+              { n: "6", l: "Hands per cushion" },
+            ].map((k) => (
+              <div key={k.l}>
+                <p className="font-serif text-[3.6rem] md:text-[5rem] leading-none">{k.n}</p>
+                <p className="mt-4 font-sans uppercase tracking-[0.25em] text-[1rem] text-muted-foreground">
+                  {k.l}
                 </p>
               </div>
-            </AppearOnScroll>
-
-            <AppearOnScroll delay={150}>
-              <div className="lg:col-span-2 p-8 rounded-2xl bg-[rgba(255,149,238,0.15)]">
-                <Sun className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Low-carbon digital</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  Our site is optimized for light page weights, efficient hosting, and minimal energy use per visit.
-                </p>
-              </div>
-            </AppearOnScroll>
-
-            <AppearOnScroll delay={300}>
-              <div className="lg:col-span-2 p-8 rounded-2xl bg-[rgba(255,207,109,0.15)]">
-                <Droplets className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Thoughtful partnerships</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  We work with suppliers and creators who share our values around transparency, fair labor, and environmental care.
-                </p>
-              </div>
-            </AppearOnScroll>
-
-            <AppearOnScroll delay={450}>
-              <div className="lg:col-span-1 p-8 rounded-2xl bg-[rgba(254,185,131,0.15)]">
-                <TreePine className="w-[48px] h-[48px] text-black mb-4" />
-                <h3 className="text-[2.2rem] font-semibold mb-3 text-black">Giving back</h3>
-                <p className="text-[1.6rem] leading-[1.8] text-black">
-                  A portion of every Loominah Book sale supports environmental restoration and conservation projects.
-                </p>
-              </div>
-            </AppearOnScroll>
+            ))}
           </div>
         </div>
-      </Section>
+      </section>
+
+      {/* Material honesty */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48 pb-32">
+        <div className="max-w-[138rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-6 space-y-8 order-2 lg:order-1">
+            <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary">Material Honesty</p>
+            <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em]">
+              Every piece is one of one.
+            </h2>
+            <p className="text-[1.7rem] leading-[1.8] text-muted-foreground">
+              Because our fabric is reclaimed, the exact combination in your cushion or runner
+              cannot be repeated. Small variations in tone, print and weave are not flaws — they
+              are the reason the piece exists.
+            </p>
+          </div>
+          <figure className="lg:col-span-6 relative aspect-[4/5] overflow-hidden order-1 lg:order-2">
+            <img src={stripedCushion} alt="A striped brocade and satin cushion" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+          </figure>
+        </div>
+      </section>
 
       <Footer />
     </div>
