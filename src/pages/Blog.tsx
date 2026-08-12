@@ -11,6 +11,8 @@ import greenTote from "@/assets/loominah/products/green-tote.jpg";
 import redPatchwork from "@/assets/loominah/products/red-patchwork-cushion.jpg";
 import laptopSleeve from "@/assets/loominah/products/laptop-sleeve.jpg";
 import embroideredClutch from "@/assets/loominah/products/embroidered-clutch.png";
+import greenToteImg from "@/assets/loominah/products/green-tote.jpg";
+import { Leaf, Scissors, Truck, HandHeart } from "lucide-react";
 
 const collections = [
   { name: "Cushions", image: patchworkFloral, href: "/custom-projects#cushions", tag: "01 / Collection" },
@@ -26,6 +28,29 @@ const process = [
   { step: "04", label: "Crafted", detail: "Sewn in small runs by hands that know the cloth." },
   { step: "05", label: "Inspected", detail: "Every piece finished, pressed and read for beauty." },
   { step: "06", label: "Delivered", detail: "Wrapped with care, ready for beautiful spaces." },
+];
+
+const categoryTiles = [
+  { name: "Cushions", image: patchworkFloral, href: "/custom-projects#cushions" },
+  { name: "Table Linens", image: runnerNapkin, href: "/custom-projects#table" },
+  { name: "Totes", image: stripedTote, href: "/custom-projects#totes" },
+  { name: "Clutches", image: embroideredClutch, href: "/custom-projects#accessories" },
+  { name: "Sleeves", image: laptopSleeve, href: "/custom-projects#accessories" },
+  { name: "Brocade", image: brocadeCushion, href: "/custom-projects#cushions" },
+];
+
+const newArrivals = [
+  { name: "Patchwork Floral Cushion", image: patchworkFloral, meta: "Limited edition of 12", badge: "New" },
+  { name: "Striped Weave Cushion", image: stripedCushion, meta: "Limited edition of 20", badge: "" },
+  { name: "Floral Runner & Napkins", image: runnerNapkin, meta: "Made to order", badge: "New" },
+  { name: "Green Canvas Tote", image: greenToteImg, meta: "Limited edition of 30", badge: "" },
+];
+
+const promises = [
+  { icon: HandHeart, title: "Handcrafted", copy: "Sewn in small runs by skilled hands." },
+  { icon: Leaf, title: "Reclaimed", copy: "Luxury surplus textiles, never landfill." },
+  { icon: Scissors, title: "Made to Order", copy: "Custom sizes and colourways on request." },
+  { icon: Truck, title: "Carefully Shipped", copy: "Wrapped and delivered worldwide." },
 ];
 
 const Blog = () => {
@@ -76,6 +101,48 @@ const Blog = () => {
               </figure>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* STORY ———————————————————————————————— */}
+      {/* SHOP BY CATEGORY ————————————————————— */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-24 md:pt-32">
+        <div className="max-w-[138rem] mx-auto">
+          <h2 className="font-serif text-[2.8rem] md:text-[3.6rem] text-center mb-12 tracking-[-0.02em]">
+            Shop by category
+          </h2>
+          <ul className="grid grid-cols-3 md:grid-cols-6 gap-6 md:gap-8 list-none">
+            {categoryTiles.map((c) => (
+              <li key={c.name}>
+                <Link to={c.href} className="group flex flex-col items-center gap-4">
+                  <span className="relative block w-full aspect-square rounded-full overflow-hidden bg-muted">
+                    <img
+                      src={c.image}
+                      alt={c.name}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </span>
+                  <span className="text-[1.3rem] uppercase tracking-[0.15em] text-foreground/80 group-hover:text-primary transition-colors text-center">
+                    {c.name}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* BRAND PROMISES ——————————————————————— */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-24 md:pt-32">
+        <div className="max-w-[138rem] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 border-y border-border py-12">
+          {promises.map((p) => (
+            <div key={p.title} className="flex flex-col items-center text-center gap-3">
+              <p.icon className="w-7 h-7 text-primary" strokeWidth={1.25} />
+              <h3 className="font-serif text-[1.9rem]">{p.title}</h3>
+              <p className="text-[1.35rem] leading-[1.6] text-muted-foreground max-w-[24rem]">{p.copy}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -153,6 +220,55 @@ const Blog = () => {
                   <h3 className="font-serif text-[2.2rem] md:text-[2.8rem] text-background leading-none">
                     {c.name}
                   </h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROCESS ——————————————————————————————— */}
+      {/* NEW ARRIVALS ————————————————————————— */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">New Arrivals</p>
+              <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em]">
+                Fresh off the loom.
+              </h2>
+            </div>
+            <Link
+              to="/custom-projects"
+              className="hidden md:inline-block text-[1.3rem] uppercase tracking-[0.2em] border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
+            >
+              Shop all →
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {newArrivals.map((p) => (
+              <Link key={p.name} to="/custom-projects" className="group block bg-card border border-border/60">
+                <figure className="relative aspect-square overflow-hidden">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]"
+                  />
+                  {p.badge && (
+                    <span className="absolute top-3 left-3 bg-primary text-primary-foreground text-[1rem] uppercase tracking-[0.2em] px-3 py-1">
+                      {p.badge}
+                    </span>
+                  )}
+                </figure>
+                <div className="p-5 text-center">
+                  <h3 className="font-serif text-[1.9rem] leading-[1.3] group-hover:text-primary transition-colors">
+                    {p.name}
+                  </h3>
+                  <p className="mt-2 text-[1.25rem] uppercase tracking-[0.15em] text-muted-foreground">{p.meta}</p>
+                  <span className="mt-4 inline-block text-[1.2rem] uppercase tracking-[0.2em] border-b border-foreground/40 pb-1 group-hover:border-primary group-hover:text-primary transition-colors">
+                    Enquire
+                  </span>
                 </div>
               </Link>
             ))}
