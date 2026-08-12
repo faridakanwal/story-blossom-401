@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Search, User, ShoppingBag } from "lucide-react";
+import AnnouncementBar from "./AnnouncementBar";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+
+const navLinks = [
+  { label: "Collections", to: "/custom-projects" },
+  { label: "Our Story", to: "/about" },
+  { label: "Our Process", to: "/sustainability" },
+  { label: "Journal", to: "/loominah-book" },
+  { label: "Contact", to: "/contact" },
+];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,19 +34,49 @@ const Header = () => {
       className={`sticky top-0 z-50 bg-background transition-shadow duration-300 ${
         isScrolled ? "shadow-[0_0_calc(1.125*16px)_rgba(0,0,0,0.15)]" : ""
       }`}
-      style={{ height: "72px" }}
     >
-      <div className="h-full px-6 md:px-[calc(18vw-10rem)]">
-        <div className="flex items-center justify-between h-full max-w-[138rem] mx-auto">
-          <Link to="/" className="font-sans text-[21px] font-bold text-foreground">
+      <AnnouncementBar />
+      <div className="px-6 md:px-[calc(18vw-10rem)] border-b border-border/60">
+        <div className="flex items-center justify-between h-[72px] max-w-[138rem] mx-auto gap-8">
+          <Link to="/" className="font-sans text-[21px] font-bold text-foreground shrink-0">
             loominah
           </Link>
+
+          {/* Desktop nav */}
+          <nav className="hidden lg:flex items-center gap-10">
+            {navLinks.map((l) => (
+              <Link
+                key={l.label}
+                to={l.to}
+                className="relative text-[1.4rem] text-foreground/80 hover:text-foreground transition-colors after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-5">
+            <div className="hidden lg:flex items-center gap-2 border border-border rounded-full px-4 py-2 w-[22rem] bg-card">
+              <Search className="w-4 h-4 text-muted-foreground shrink-0" />
+              <input
+                type="search"
+                placeholder="Search pieces"
+                aria-label="Search"
+                className="w-full bg-transparent text-[1.3rem] outline-none placeholder:text-muted-foreground"
+              />
+            </div>
+            <Link to="/contact" aria-label="Account" className="hidden lg:block text-foreground/80 hover:text-foreground transition-colors">
+              <User className="w-5 h-5" />
+            </Link>
+            <Link to="/custom-projects" aria-label="Shop" className="hidden lg:block text-foreground/80 hover:text-foreground transition-colors">
+              <ShoppingBag className="w-5 h-5" />
+            </Link>
 
           {/* Menu Button */}
           <Sheet>
         <SheetTrigger asChild>
           <button
-            className="flex items-center gap-2 p-2 text-foreground hover:text-muted-foreground transition-colors"
+            className="flex lg:hidden items-center gap-2 p-2 text-foreground hover:text-muted-foreground transition-colors"
             aria-label="Open menu"
           >
             <span className="text-[21px] font-medium leading-none">Menu</span>
@@ -157,6 +197,7 @@ const Header = () => {
           </div>
         </SheetContent>
       </Sheet>
+          </div>
         </div>
       </div>
     </header>
