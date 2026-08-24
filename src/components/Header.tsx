@@ -13,6 +13,8 @@ const navLinks = [
   { label: "Collections", to: "/custom-projects" },
   { label: "Our Story", to: "/about" },
   { label: "Our Process", to: "/sustainability" },
+  { label: "Corporate Gifting", to: "/corporate-gifting" },
+  { label: "Impact", to: "/impact" },
   { label: "Journal", to: "/loominah-book" },
   { label: "Contact", to: "/contact" },
 ];
@@ -141,6 +143,24 @@ const Header = () => {
                     style={{ animationDelay: "300ms", animationFillMode: "backwards" }}
                   >
                     Our Process
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/corporate-gifting"
+                    className="text-[1.6rem] inline-block font-semibold text-foreground hover:text-primary transition-colors duration-500 animate-in fade-in slide-in-from-right-4"
+                    style={{ animationDelay: "350ms", animationFillMode: "backwards" }}
+                  >
+                    Corporate Gifting
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/impact"
+                    className="text-[1.6rem] inline-block font-semibold text-foreground hover:text-primary transition-colors duration-500 animate-in fade-in slide-in-from-right-4"
+                    style={{ animationDelay: "380ms", animationFillMode: "backwards" }}
+                  >
+                    Impact
                   </Link>
                 </li>
                 <li>

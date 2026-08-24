@@ -14,6 +14,8 @@ import Terms from "./pages/Terms";
 import LoominahBook from "./pages/LoominahBook";
 import CustomProjects from "./pages/CustomProjects";
 import Sustainability from "./pages/Sustainability";
+import CorporateGifting from "./pages/CorporateGifting";
+import Impact from "./pages/Impact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +39,9 @@ const App = () => (
             <Route path="/loominah-book" element={<LoominahBook />} />
             <Route path="/custom-projects" element={<CustomProjects />} />
             <Route path="/sustainability" element={<Sustainability />} />
+            <Route path="/products" element={<CustomProjects />} />
+            <Route path="/corporate-gifting" element={<CorporateGifting />} />
+            <Route path="/impact" element={<Impact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
