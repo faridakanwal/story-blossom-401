@@ -13,6 +13,8 @@ const navLinks = [
   { label: "Collections", to: "/custom-projects" },
   { label: "Our Story", to: "/about" },
   { label: "Our Process", to: "/sustainability" },
+  { label: "Corporate Gifting", to: "/corporate-gifting" },
+  { label: "Impact", to: "/impact" },
   { label: "Journal", to: "/loominah-book" },
   { label: "Contact", to: "/contact" },
 ];
