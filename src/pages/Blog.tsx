@@ -124,7 +124,7 @@ const Blog = () => {
 
       {/* MARQUEE */}
       <div className="overflow-hidden border-y border-border bg-secondary/40 py-5">
-        <div className="flex w-max animate-[marquee_38s_linear_infinite] gap-10">
+        <div className="flex w-max animate-marquee gap-10">
           {[0, 1].map((n) => (
             <div key={n} className="flex gap-10 shrink-0">
               {marquee.map((m) => (
