@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const messages = [
-  "Complimentary shipping on orders above AED 500 · Shop the collection",
   "Every piece handcrafted from reclaimed luxury textiles",
   "Trade & interior designer catalogue — request yours today",
 ];
