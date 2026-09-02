@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import heroCushion from "@/assets/loominah/products/patchwork-floral-cushion.jpg";
-import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
 import heroBannerAsset from "@/assets/HeroBanner.png.asset.json";
 import catCushionsAsset from "@/assets/cushions.png.asset.json";
 import catLinensAsset from "@/assets/tableLinens.png.asset.json";
