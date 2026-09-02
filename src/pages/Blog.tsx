@@ -64,9 +64,9 @@ const impact = [
 ];
 
 const collection = [
-  { badge: "One of a kind", cat: "Home", name: "Patchwork Cushions", image: patchworkTassel },
-  { badge: "Made to order", cat: "Dining", name: "Table Linens", image: runnerNapkin },
-  { badge: "Best for gifting", cat: "Everyday", name: "Signature Totes", image: stripedTote },
+  { badge: "One of a kind", cat: "Home", name: "Patchwork Cushions", image: cushionOneAsset.url },
+  { badge: "Made to order", cat: "Dining", name: "Table Linens", image: linensAsset.url },
+  { badge: "Best for gifting", cat: "Everyday", name: "Signature Totes", image: toteSetAsset.url },
 ];
 
 const howItWorks = [
