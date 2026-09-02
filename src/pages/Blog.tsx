@@ -188,7 +188,7 @@ const Blog = () => {
             <figure className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={studioAsset.url}
-                alt="Artisan hand-stitching linen with gold thread"
+                alt="Artisan sorting block-printed rescued fabrics on a sunlit studio table"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -258,7 +258,7 @@ const Blog = () => {
             <figure className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={frameAsset.url}
-                alt="Curated stacks of upcycled fabric swatches"
+                alt="Framed textile collage made from rescued fabric offcuts beside folded cloth"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -414,7 +414,7 @@ const Blog = () => {
       <section className="relative w-full mt-32 md:mt-48 overflow-hidden">
         <img
           src={giftToteAsset.url}
-          alt="Embroidered clutch presented as a corporate gift"
+          alt="Pastel patchwork tote with embroidered floral trim and tassels"
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
