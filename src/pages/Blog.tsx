@@ -2,13 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroCushion from "@/assets/loominah/products/patchwork-floral-cushion.jpg";
-import runnerNapkin from "@/assets/loominah/products/floral-runner-napkin.jpg";
-import stripedTote from "@/assets/loominah/products/striped-tote.jpg";
-import patchworkTassel from "@/assets/loominah/products/patchwork-tassel-cushion.jpg";
 import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
-import embroideredClutch from "@/assets/loominah/products/embroidered-clutch.png";
-import craft from "@/assets/loominah/craft.jpg";
-import textiles from "@/assets/loominah/textiles.jpg";
 import heroBannerAsset from "@/assets/HeroBanner.png.asset.json";
 import catCushionsAsset from "@/assets/cushions.png.asset.json";
 import catLinensAsset from "@/assets/tableLinens.png.asset.json";
@@ -195,7 +189,7 @@ const Blog = () => {
           <div className="lg:col-span-6">
             <figure className="relative aspect-[4/5] overflow-hidden">
               <img
-                src={craft}
+                src={studioAsset.url}
                 alt="Artisan hand-stitching linen with gold thread"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -265,7 +259,7 @@ const Blog = () => {
           <div className="lg:col-span-5">
             <figure className="relative aspect-[4/5] overflow-hidden">
               <img
-                src={textiles}
+                src={frameAsset.url}
                 alt="Curated stacks of upcycled fabric swatches"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -421,7 +415,7 @@ const Blog = () => {
       {/* CLOSING CTA */}
       <section className="relative w-full mt-32 md:mt-48 overflow-hidden">
         <img
-          src={embroideredClutch}
+          src={giftToteAsset.url}
           alt="Embroidered clutch presented as a corporate gift"
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
