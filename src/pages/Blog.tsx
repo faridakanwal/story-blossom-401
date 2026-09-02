@@ -93,8 +93,8 @@ const Blog = () => {
       {/* HERO */}
       <section className="relative w-full min-h-[80vh] flex items-end overflow-hidden">
         <img
-          src={brocadeCushion}
-          alt="Statement patchwork cushion in brocade and gold on a walnut console"
+          src={heroBannerAsset.url}
+          alt="Loominah patchwork cushions and tote styled on a linen daybed in a meadow at golden hour"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-foreground/10" />
