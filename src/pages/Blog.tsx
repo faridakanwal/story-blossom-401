@@ -26,10 +26,10 @@ const marquee = [
 ];
 
 const categories = [
-  { name: "Cushions", image: heroCushion, href: "/products" },
-  { name: "Table Linens", image: runnerNapkin, href: "/products" },
-  { name: "Totes & Bags", image: stripedTote, href: "/products" },
-  { name: "Corporate Gifting", image: embroideredClutch, href: "/corporate-gifting" },
+  { name: "Cushions", image: catCushionsAsset.url, href: "/products" },
+  { name: "Table Linens", image: catLinensAsset.url, href: "/products" },
+  { name: "Totes & Bags", image: catToteAsset.url, href: "/products" },
+  { name: "Corporate Gifting", image: catCorporateAsset.url, href: "/corporate-gifting" },
 ];
 
 const alchemy = [
