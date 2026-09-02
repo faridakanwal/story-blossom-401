@@ -9,6 +9,12 @@ import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
 import embroideredClutch from "@/assets/loominah/products/embroidered-clutch.png";
 import craft from "@/assets/loominah/craft.jpg";
 import textiles from "@/assets/loominah/textiles.jpg";
+import heroBannerAsset from "@/assets/HeroBanner.png.asset.json";
+import catCushionsAsset from "@/assets/cushions.png.asset.json";
+import catLinensAsset from "@/assets/tableLinens.png.asset.json";
+import catToteAsset from "@/assets/toteBag2.png.asset.json";
+import catCorporateAsset from "@/assets/corporate.png.asset.json";
+
 
 const marquee = [
   "Handcrafted in the UAE",
@@ -20,10 +26,10 @@ const marquee = [
 ];
 
 const categories = [
-  { name: "Cushions", image: heroCushion, href: "/products" },
-  { name: "Table Linens", image: runnerNapkin, href: "/products" },
-  { name: "Totes & Bags", image: stripedTote, href: "/products" },
-  { name: "Corporate Gifting", image: embroideredClutch, href: "/corporate-gifting" },
+  { name: "Cushions", image: catCushionsAsset.url, href: "/products" },
+  { name: "Table Linens", image: catLinensAsset.url, href: "/products" },
+  { name: "Totes & Bags", image: catToteAsset.url, href: "/products" },
+  { name: "Corporate Gifting", image: catCorporateAsset.url, href: "/corporate-gifting" },
 ];
 
 const alchemy = [
@@ -87,8 +93,8 @@ const Blog = () => {
       {/* HERO */}
       <section className="relative w-full min-h-[80vh] flex items-end overflow-hidden">
         <img
-          src={brocadeCushion}
-          alt="Statement patchwork cushion in brocade and gold on a walnut console"
+          src={heroBannerAsset.url}
+          alt="Loominah patchwork cushions and tote styled on a linen daybed in a meadow at golden hour"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-foreground/10" />
