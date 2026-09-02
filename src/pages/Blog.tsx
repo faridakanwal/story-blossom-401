@@ -9,6 +9,12 @@ import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
 import embroideredClutch from "@/assets/loominah/products/embroidered-clutch.png";
 import craft from "@/assets/loominah/craft.jpg";
 import textiles from "@/assets/loominah/textiles.jpg";
+import heroBannerAsset from "@/assets/HeroBanner.png.asset.json";
+import catCushionsAsset from "@/assets/cushions.png.asset.json";
+import catLinensAsset from "@/assets/tableLinens.png.asset.json";
+import catToteAsset from "@/assets/toteBag2.png.asset.json";
+import catCorporateAsset from "@/assets/corporate.png.asset.json";
+
 
 const marquee = [
   "Handcrafted in the UAE",
