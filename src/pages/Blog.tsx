@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import heroBannerAsset from "@/assets/HeroBanner.png.asset.json";
+import heroBannerAsset from "@/assets/HeroBanner1.png.asset.json";
 import catCushionsAsset from "@/assets/cushions.png.asset.json";
 import catLinensAsset from "@/assets/tableLinens.png.asset.json";
 import catToteAsset from "@/assets/toteBag2.png.asset.json";
@@ -92,14 +92,14 @@ const Blog = () => {
       <section className="relative w-full min-h-[80vh] flex items-end overflow-hidden">
         <img
           src={heroBannerAsset.url}
-          alt="Loominah patchwork cushions and tote styled on a linen daybed in a meadow at golden hour"
+          alt="Loominah handcrafted patchwork cushions and textiles arranged on an ivory sofa at golden hour"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-foreground/10" />
         <div className="relative w-full px-6 md:px-[calc(18vw-10rem)] pb-20 md:pb-28 pt-40">
           <div className="max-w-[138rem] mx-auto">
             <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-background/80 mb-6">
-              Loominah · Atelier · UAE
+              Sustainable . Handcrafted . Timeless
             </p>
             <h1 className="font-serif font-normal text-[4.4rem] md:text-[7.2rem] leading-[1.05] tracking-[-0.02em] text-background max-w-[24ch]">
               Luxury with a <em className="italic">Second Story.</em>
