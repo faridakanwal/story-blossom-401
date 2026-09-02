@@ -14,6 +14,12 @@ import catCushionsAsset from "@/assets/cushions.png.asset.json";
 import catLinensAsset from "@/assets/tableLinens.png.asset.json";
 import catToteAsset from "@/assets/toteBag2.png.asset.json";
 import catCorporateAsset from "@/assets/corporate.png.asset.json";
+import studioAsset from "@/assets/2Image.png.asset.json";
+import frameAsset from "@/assets/Frame.png.asset.json";
+import cushionOneAsset from "@/assets/cushion1.png.asset.json";
+import linensAsset from "@/assets/linens.png.asset.json";
+import toteSetAsset from "@/assets/2totte.png.asset.json";
+import giftToteAsset from "@/assets/giftTote.png.asset.json";
 
 
 const marquee = [
