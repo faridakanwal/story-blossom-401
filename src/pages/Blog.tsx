@@ -1,19 +1,17 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import heroCushion from "@/assets/loominah/products/patchwork-floral-cushion.jpg";
-import runnerNapkin from "@/assets/loominah/products/floral-runner-napkin.jpg";
-import stripedTote from "@/assets/loominah/products/striped-tote.jpg";
-import patchworkTassel from "@/assets/loominah/products/patchwork-tassel-cushion.jpg";
-import brocadeCushion from "@/assets/loominah/products/brocade-cushion.jpg";
-import embroideredClutch from "@/assets/loominah/products/embroidered-clutch.png";
-import craft from "@/assets/loominah/craft.jpg";
-import textiles from "@/assets/loominah/textiles.jpg";
 import heroBannerAsset from "@/assets/HeroBanner.png.asset.json";
 import catCushionsAsset from "@/assets/cushions.png.asset.json";
 import catLinensAsset from "@/assets/tableLinens.png.asset.json";
 import catToteAsset from "@/assets/toteBag2.png.asset.json";
 import catCorporateAsset from "@/assets/corporate.png.asset.json";
+import studioAsset from "@/assets/2Image.png.asset.json";
+import frameAsset from "@/assets/Frame.png.asset.json";
+import cushionOneAsset from "@/assets/cushion1.png.asset.json";
+import linensAsset from "@/assets/linens.png.asset.json";
+import toteSetAsset from "@/assets/2totte.png.asset.json";
+import giftToteAsset from "@/assets/giftTote.png.asset.json";
 
 
 const marquee = [
@@ -58,9 +56,9 @@ const impact = [
 ];
 
 const collection = [
-  { badge: "One of a kind", cat: "Home", name: "Patchwork Cushions", image: patchworkTassel },
-  { badge: "Made to order", cat: "Dining", name: "Table Linens", image: runnerNapkin },
-  { badge: "Best for gifting", cat: "Everyday", name: "Signature Totes", image: stripedTote },
+  { badge: "One of a kind", cat: "Home", name: "Patchwork Cushions", image: cushionOneAsset.url },
+  { badge: "Made to order", cat: "Dining", name: "Table Linens", image: linensAsset.url },
+  { badge: "Best for gifting", cat: "Everyday", name: "Signature Totes", image: toteSetAsset.url },
 ];
 
 const howItWorks = [
@@ -189,8 +187,8 @@ const Blog = () => {
           <div className="lg:col-span-6">
             <figure className="relative aspect-[4/5] overflow-hidden">
               <img
-                src={craft}
-                alt="Artisan hand-stitching linen with gold thread"
+                src={studioAsset.url}
+                alt="Artisan sorting block-printed rescued fabrics on a sunlit studio table"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -259,8 +257,8 @@ const Blog = () => {
           <div className="lg:col-span-5">
             <figure className="relative aspect-[4/5] overflow-hidden">
               <img
-                src={textiles}
-                alt="Curated stacks of upcycled fabric swatches"
+                src={frameAsset.url}
+                alt="Framed textile collage made from rescued fabric offcuts beside folded cloth"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -415,8 +413,8 @@ const Blog = () => {
       {/* CLOSING CTA */}
       <section className="relative w-full mt-32 md:mt-48 overflow-hidden">
         <img
-          src={embroideredClutch}
-          alt="Embroidered clutch presented as a corporate gift"
+          src={giftToteAsset.url}
+          alt="Pastel patchwork tote with embroidered floral trim and tassels"
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
