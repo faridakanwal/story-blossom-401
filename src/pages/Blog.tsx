@@ -101,12 +101,16 @@ const Blog = () => {
             <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-background/80 mb-6">
               Sustainable . Handcrafted . Timeless
             </p>
-            <h1 className="font-serif font-normal text-[4.4rem] md:text-[7.2rem] leading-[1.05] tracking-[-0.02em] text-background max-w-[24ch]">
-              Luxury with a <em className="italic">Second Story.</em>
+            <h1 className="font-serif font-normal text-[3.6rem] md:text-[5.4rem] leading-[1.12] tracking-[-0.02em] text-background max-w-[26ch]">
+              What We Throw Away Today, <em className="italic">Our Children Will Inherit Tomorrow.</em>
             </h1>
-            <p className="mt-8 text-[1.7rem] leading-[1.7] text-background/85 max-w-[60rem]">
-              Textile offcuts from the world's finest ateliers, rewoven by hand into heirloom home
-              objects and considered corporate gifts — quietly transforming what fashion leaves behind.
+            <p className="mt-8 text-[1.7rem] leading-[1.7] text-background/85 max-w-[62rem]">
+              The textile industry discards millions of tonnes of fabric every year. Silks, linens, and
+              jacquards — woven on looms, dyed by hand, carried across continents — buried in landfills
+              where they will sit for longer than our grandchildren will live. We refuse to let that be
+              the ending. Loominah rescues these forgotten fabrics and gives them a second life — as
+              cushions, runners, mats, and accessories, handcrafted by women artisans in the UAE. Every
+              piece is one of a kind. Every piece carries a story.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -122,6 +126,42 @@ const Blog = () => {
                 Corporate Gifting
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THE WORLD WE ARE LEAVING BEHIND */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-24 md:pt-32">
+        <div className="max-w-[138rem] mx-auto">
+          <div className="max-w-[100rem] mx-auto text-center">
+            <blockquote className="font-serif italic text-[2.8rem] md:text-[4rem] leading-[1.25] tracking-[-0.01em]">
+              "Nothing beautiful should ever be discarded."
+            </blockquote>
+            <footer className="mt-6 font-sans uppercase tracking-[0.25em] text-[1.1rem] text-muted-foreground">
+              Our Founding Belief
+            </footer>
+          </div>
+          <div className="max-w-[80rem] pt-20 md:pt-28">
+            <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">The Stakes</p>
+            <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em] mb-8">
+              The world we are leaving behind.
+            </h2>
+            <p className="text-[1.6rem] leading-[1.8] text-muted-foreground mb-6">
+              Close your eyes for a moment and think about the world your children will inherit. Think
+              about the landfills — growing every day, swallowing materials that could have been saved.
+              Think about the textile industry, one of the most polluting on earth, producing fabric that
+              is worn once, discarded, and forgotten. Think about the water wasted, the energy burned,
+              the human skill thrown away.
+            </p>
+            <p className="text-[1.6rem] leading-[1.8] text-muted-foreground mb-6">
+              Now think about what happens when we choose differently. When we rescue a piece of silk
+              from a landfill, we are not just saving fabric. We are saving the water that was used to
+              grow it. The energy that was used to weave it. The hands that dyed it.
+            </p>
+            <p className="text-[1.6rem] leading-[1.8] text-foreground/90">
+              This is what Loominah is about. Not products. A choice — a quiet, deliberate choice to
+              leave the world a little less broken than we found it.
+            </p>
           </div>
         </div>
       </section>
@@ -194,10 +234,10 @@ const Blog = () => {
               />
               <figcaption className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-foreground/70 to-transparent">
                 <p className="font-serif italic text-[2rem] md:text-[2.4rem] leading-[1.35] text-background">
-                  “Nothing beautiful should ever be discarded.”
+                  Every rescued fabric carries the memory of its first life.
                 </p>
                 <p className="mt-3 font-sans uppercase tracking-[0.3em] text-[1rem] text-background/75">
-                  Our Founding Belief
+                  Rescued at the source
                 </p>
               </figcaption>
             </figure>
@@ -210,12 +250,13 @@ const Blog = () => {
             <p className="text-[1.6rem] leading-[1.8] text-muted-foreground mb-6">
               Loominah began in a Dubai studio with a simple observation: the fashion industry creates
               extraordinary fabrics, and then discards a staggering portion of them. Deadstock silks,
-              linens and jacquards — often flawless — end up in landfill within weeks of leaving the loom.
+              linens, and jacquards — often flawless — end up in landfill within weeks of leaving the loom.
             </p>
             <p className="text-[1.6rem] leading-[1.8] text-muted-foreground mb-10">
-              We work directly with fashion houses, textile mills, designers and tailoring workshops to
+              We work directly with fashion houses, textile mills, designers, and tailoring workshops to
               rescue these fabrics. In the hands of our women artisans, they are reimagined into cushions,
-              table linens, gifting objects and interior pieces designed to last a generation.
+              table linens, gifting objects, and interior pieces designed to last a generation. Every
+              piece carries the memory of its first life — and the promise of a second.
             </p>
             <Link
               to="/about"
