@@ -529,6 +529,38 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* A LETTER TO YOU */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">A Letter to You</p>
+          <h2 className="font-serif text-[3rem] md:text-[4.2rem] leading-[1.15] tracking-[-0.02em] mb-8 max-w-[32ch]">
+            If you have read this far, you already understand.
+          </h2>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[68rem] mb-6">
+            You understand that the world we leave to our children is built from the choices we make
+            today. Not the big, dramatic choices — but the small, quiet ones. The cushion you buy. The
+            gift you give. The fabric you choose to save.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[68rem] mb-6">
+            You understand that sustainability is not a sacrifice. It is a privilege. The privilege of
+            choosing something made with care over something made without thought. The privilege of
+            knowing that the money you spend today supports a woman's livelihood, saves a piece of
+            fabric from a landfill, and leaves the world a little less broken than you found it.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-foreground/90 max-w-[68rem] mb-12">
+            That is what Loominah offers you. Not a product. A choice. A choice to buy something that
+            matters. We hope you will make that choice. Not because we need your money — but because
+            the world needs more people who care.
+          </p>
+          <Link
+            to="/products"
+            className="inline-flex items-center px-10 py-4 bg-foreground text-background text-[1.3rem] uppercase tracking-[0.2em] hover:bg-primary hover:text-primary-foreground transition-colors duration-500"
+          >
+            Explore the Collection
+          </Link>
+        </div>
+      </section>
+
       {/* CLOSING CTA */}
       <section className="relative w-full mt-32 md:mt-48 overflow-hidden">
         <img
