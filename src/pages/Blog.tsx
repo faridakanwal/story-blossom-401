@@ -268,6 +268,35 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* EVERY PIECE HAS A STORY */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">Every Piece Has a Story</p>
+          <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em] mb-8">
+            No two pieces are the same.
+          </h2>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[64rem] mb-6">
+            Because we work exclusively with rescued scraps and deadstock, no two Loominah pieces are
+            ever the same. Each cushion, each runner, each tote begins as a different combination of
+            fabric. When you buy a Loominah piece, you are buying something that has never existed
+            before and will never exist again.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-foreground/90 max-w-[64rem] mb-16">
+            There is no second one. There is no restock. There is only this piece, with this fabric,
+            made by these hands — and it is yours.
+          </p>
+          <div className="max-w-[80rem] border-t border-border pt-12">
+            <h3 className="font-serif text-[2.6rem] mb-4">The Story Card</h3>
+            <p className="text-[1.6rem] leading-[1.8] text-muted-foreground">
+              When you receive a Loominah piece, it comes with its story. Not a tag. Not a barcode. A
+              story. Where the fabric was rescued from. Which artisan's hands shaped it. What it was
+              before, and what it has become. This is the difference between owning something beautiful
+              and owning something meaningful.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* THE ALCHEMY */}
       <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
         <div className="max-w-[138rem] mx-auto">
@@ -289,6 +318,31 @@ const Blog = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* THE ARTISANS */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">The Artisans</p>
+          <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em] mb-8">
+            Crafted by women, <em className="italic">powered by purpose.</em>
+          </h2>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[68rem] mb-6">
+            Behind every Loominah piece is a woman whose hands you will never meet but whose artistry
+            you will see every day. Hand embroidery is not decoration. It is a tradition — a language
+            of patience, skill, and beauty passed down from mother to daughter across generations. In a
+            world that increasingly replaces human hands with machines, these women keep a craft alive
+            that no factory can replicate.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[68rem] mb-6">
+            When you choose a hand-embroidered Loominah piece, you are not just buying something
+            beautiful. You are supporting a woman's livelihood. You are keeping a tradition alive. You
+            are telling her that her craft matters — that her hands are worth more than a machine.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-foreground/90 max-w-[68rem]">
+            This is what meaningful luxury looks like. Not luxury that costs more. Luxury that means more.
+          </p>
         </div>
       </section>
 
@@ -325,6 +379,30 @@ const Blog = () => {
               See the full impact report →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* WHY THIS MATTERS FOR TOMORROW */}
+      <section className="relative w-full px-6 md:px-[calc(18vw-10rem)] pt-32 md:pt-48">
+        <div className="max-w-[138rem] mx-auto">
+          <p className="font-sans uppercase tracking-[0.3em] text-[1.1rem] text-primary mb-4">Why This Matters for Tomorrow</p>
+          <h2 className="font-serif text-[3.2rem] md:text-[4.4rem] leading-[1.1] tracking-[-0.02em] mb-8">
+            The bigger picture.
+          </h2>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[68rem] mb-6">
+            We are not going to solve the climate crisis with cushions. But we are going to change the
+            way people think about what they buy, what they throw away, and what they leave behind.
+            Every year, the textile industry produces more than 92 million tonnes of waste.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-muted-foreground max-w-[68rem] mb-6">
+            Loominah is a small brand. We cannot save the world. But we can save fabric — one scrap at
+            a time, one piece at a time, one story at a time.
+          </p>
+          <p className="text-[1.6rem] leading-[1.8] text-foreground/90 max-w-[68rem]">
+            Every customer who chooses Loominah is a person who said: I will not buy something
+            meaningless. I will buy something that matters. That is how change begins. Not with a
+            slogan. With a choice.
+          </p>
         </div>
       </section>
 
