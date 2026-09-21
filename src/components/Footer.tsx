@@ -8,6 +8,9 @@ const Footer = () => {
     <footer className="border-t border-border mt-24">
       <div className="py-12 px-6 md:px-[calc(18vw-10rem)]">
         <div className="max-w-[138rem] mx-auto">
+          <p className="font-serif italic text-[2.4rem] md:text-[3rem] leading-[1.3] mb-12">
+            Where Forgotten Fabric Becomes Treasured Art
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
             {/* Column 1: Theme Toggle */}
             <div className="flex flex-col gap-3">
