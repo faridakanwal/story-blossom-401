@@ -576,18 +576,18 @@ const Blog = () => {
               Let's Create Together
             </p>
             <h2 className="font-serif text-[3.6rem] md:text-[5.2rem] leading-[1.05] tracking-[-0.02em] text-background mb-8">
-              Give your brand a second story to tell.
+              Bring Home a Story Worth Telling
             </h2>
             <p className="text-[1.6rem] leading-[1.8] text-background/85 max-w-[64rem] mx-auto mb-12">
-              We collaborate with fashion brands, hotels, interior designers, retailers and corporate
-              gifting partners on limited editions, seasonal capsules and bespoke commissions.
+              Sustainable. Handcrafted. Uniquely yours. Discover home decor that is as meaningful as it
+              is beautiful.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/products"
                 className="inline-flex items-center px-10 py-4 bg-background text-foreground text-[1.3rem] uppercase tracking-[0.2em] hover:bg-primary hover:text-primary-foreground transition-colors duration-500"
               >
-                Begin a conversation
+                Shop Now
               </Link>
               <Link
                 to="/corporate-gifting"
